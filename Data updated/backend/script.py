@@ -22,8 +22,8 @@ def scrape_jobs():
     # Define the CSV file name
     flag = False
 
-    # for i in range(1, last_number + 1):
-    for i in range(1,3):
+    for i in range(1, last_number + 1):
+    # for i in range(1,3):
         url = base_url + str(i)
         sp = soup(url)
         job_listings = sp.find_all("article")
